@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>PutTake</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Put Take | <%= @title %></title>
+      <%= csrf_meta_tag %>
+    </head>
+    <body>
+      <%= yield %>
+    </body>
+        This is the page for the Put Take service<br /><br />
+        <a href="/pages/home" >Home</a><br />
+        <a href="/pages/registration" >Registration</a><br />
+        <a href="/pages/downloads" >Downloads</a><br />
+        <a href="/pages/edit" >Edit</a><br />
+        <a href="/pages/contact" >Contact</a><br />
+        <a href="/pages/show" >Show</a><br />
+  </html>

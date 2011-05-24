@@ -1,7 +1,11 @@
 PutTake::Application.routes.draw do
   get "pages/home"
-
   get "pages/contact"
+  get "pages/registration"
+  get "pages/downloads"
+  get "pages/edit"
+  get "pages/show"
+
 
   resources :microposts
 
