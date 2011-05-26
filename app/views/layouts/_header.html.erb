@@ -1,0 +1,15 @@
+<header>
+	  <% logo = image_tag("logo.png", :alt => "Put Take", :class => "round") %>
+          <%= link_to logo, root_path %>
+	  <nav class="round">
+	    <ul>
+	      <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Sign up", registration_path %></li>
+              <li><%= link_to "Sign in", '#' %></li>
+              <li><%= link_to "Downloads", downloads_path %></li>
+              <li><%= link_to "Edit", edit_path %></li>
+              <li><%= link_to "Contact", contact_path %></li>
+              <li><%= link_to "Show", show_path %></li>              
+	    </ul>
+	  </nav>
+</header>

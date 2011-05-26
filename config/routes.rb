@@ -1,4 +1,8 @@
 PutTake::Application.routes.draw do
+  get "users/new"
+
+  match '/signup',  :to => 'users#new'
+
 #  get "pages/home"
 #  get "pages/contact"
 #  get "pages/registration"
@@ -22,6 +26,7 @@ PutTake::Application.routes.draw do
   match '/show', :to => 'pages#show'
 
   root :to => 'pages#home'
+  
 
   resources :microposts
 

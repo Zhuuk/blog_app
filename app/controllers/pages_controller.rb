@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def registration
-    @title = "Registration"
+    @title = "Sign up"
   end
 
   def downloads
