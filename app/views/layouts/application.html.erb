@@ -1,17 +1,26 @@
  <!DOCTYPE html>
   <html>
     <head>
-      <title>Put Take | <%= @title %></title>
+      <title><%= @title %></title>
       <%= csrf_meta_tag %>
-    </head>
+      <%= render 'layouts/stylesheets' %>
+     </head>
     <body>
-      <%= yield %>
+      <div class="container">
+	<%= render 'layouts/header' %>
+	<section class="round">
+	  <%= yield %>
+	</section>
+        <%= render 'layouts/footer' %>
+        <br />This is the page for the "Put Take" service<br />
+      </div>
     </body>
-        This is the page for the Put Take service<br /><br />
-        <a href="/pages/home" >Home</a><br />
-        <a href="/pages/registration" >Registration</a><br />
-        <a href="/pages/downloads" >Downloads</a><br />
-        <a href="/pages/edit" >Edit</a><br />
-        <a href="/pages/contact" >Contact</a><br />
-        <a href="/pages/show" >Show</a><br />
   </html>
+
+
+
+
+
+
+
+ 

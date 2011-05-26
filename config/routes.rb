@@ -1,11 +1,27 @@
 PutTake::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "pages/registration"
-  get "pages/downloads"
-  get "pages/edit"
-  get "pages/show"
+#  get "pages/home"
+#  get "pages/contact"
+#  get "pages/registration"
+#  get "pages/downloads"
+#  get "pages/edit"
+#  get "pages/show"
 
+#  get 'home' => 'pages#home'
+#  get 'contact' => 'pages#contact'
+#  get 'registration' => 'pages#registration'
+#  get 'downloads' => 'pages#downloads'
+#  get 'edit' => 'pages#edit'
+#  get 'show' => 'pages#show'
+
+
+#  match '/home', :to => 'pages#home'
+  match '/contact', :to => 'pages#contact'
+  match '/registration', :to => 'pages#registration'
+  match '/downloads', :to => 'pages#downloads'
+  match '/edit', :to => 'pages#edit'
+  match '/show', :to => 'pages#show'
+
+  root :to => 'pages#home'
 
   resources :microposts
 

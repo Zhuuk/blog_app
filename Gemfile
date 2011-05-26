@@ -11,6 +11,10 @@ gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
 gem 'rake', '0.8.7'
 
+gem "colored"
+
+gem "chunky_png"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
